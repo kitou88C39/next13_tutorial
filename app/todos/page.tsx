@@ -8,7 +8,6 @@ async function getData() {
   const res = await fetch('http://loacalhost:3000/api/todos');
   return res.json();
 }
-
 export default async function Page() {
   const todos: Todo[] = await getData();
 
